@@ -1,0 +1,10 @@
+import gym
+import universe
+
+env = gmy.make('flashgames.caosterRacer-V0')
+obvservation_n = env.reset()
+
+while true:
+action_n  =[[('keyevent' 'arrowup', true)] for ob in observation_n]
+observation_n, reward_n, done_n, info = env.step(action_n)
+env.render()
